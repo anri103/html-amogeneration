@@ -6414,6 +6414,9 @@ label.btn-file {
 }
 
 .promo-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 80px;
   height: 80px;
@@ -7203,7 +7206,7 @@ header.fh {
 }
 
 header h1.page-title {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 header .page-title {
@@ -8138,7 +8141,6 @@ footer.dark.bg-primary a:hover, footer.dark.bg-primary-dark a:hover {
 /*--- end of tyopgraphy ---*/
 /*--- image ---*/
 img {
-  width: 100%;
   max-width: 100%;
   height: auto;
   -webkit-backface-visibility: hidden;
@@ -10127,7 +10129,7 @@ a.text-white:focus, a.text-white:hover {
 }
 
 a.text-black:focus, a.text-black:hover {
-  color: #dark-grey !important;
+  color: #505254 !important;
 }
 
 a.text-primary:focus, a.text-primary:hover {
