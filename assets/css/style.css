@@ -12226,16 +12226,3 @@ a.text-danger:focus, a.text-danger:hover {
 /*-------       end of 1200px       -------*/
 /*------------- end of min-widths -------------*/
 /*---------------- end of media screens ----------------*/
-
-.amo-img {
-  position: relative;
-}
-
-@media (min-width: 992px) {
-  .amo-img {
-    position: absolute;
-    top: 0;
-    right: -71px;
-    transform: rotate(15deg);
-  }
-}

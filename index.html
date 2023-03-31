@@ -20,6 +20,22 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        header h1.page-title {
+            font-size: 35px;
+        }
+        .amo-img {
+            position: relative;
+            flex: 1 1 auto;
+            margin-bottom: 7px;
+            margin-left: 10px;
+        }
+
+        @media (min-width: 992px) {
+            .amo-img {}
+        }
+    </style>
 </head>
 
 <body>
@@ -78,14 +94,13 @@
             </div>
         </nav>
         <div class="container relative">
-            <div class="row v-center justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="relative">
-                        <h1 class="page-title no-transform text-white relative z-index-1">Комплексная интеграция</h1>
-                        <img class="amo-img" src="assets/images/logo-amocrm.png" alt="">
-                    </div>
-                    <h5 class="text-white mb-30 opc-75 relative z-index-1">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</h5>
+            <div class="d-flex flex-column align-items-center">
+                <div class="relative d-flex flex-column flex-lg-row align-items-center">
+                    <h1 class="page-title no-transform text-white relative z-index-1 text-center text-lg-start">Комплексная интеграция</h1>
+                    <img class="amo-img" src="assets/images/logo-amocrm.png" alt="">
                 </div>
+                <h5 class="text-white mt-30 mb-30 opc-75 relative z-index-1 text-center" style="max-width: 600px;">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</h5>
+                <button type="button" class="btn btn-lg btn-primary-gradient mt-30"><i class="fas fa-paper-plane mr-5"></i> СВЯЗАТЬСЯ</button>
             </div>
         </div>
         <img src="assets/images/angles.svg" alt="" class="header-image-bottom">
