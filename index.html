@@ -13,12 +13,16 @@
     <title>Index - AMOgeneration</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet"> -->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
     <style>
@@ -55,8 +59,12 @@
         <nav class="navbar navbar-expand-lg navbar-inverse main-nav fixed-top">
             <div class="sticky-nav-activate fixed-top"></div>
             <div class="container">
-                <a class="navbar-brand" href="#"><span class="text-white"><span class="bg-primary-gradient text-white fw-bold rounded-2 px-2 py-1 me-2">AMO</span>generation</span></a>
-                <a class="navbar-brand sticky-logo" href="#"><span class="text-primary"><span class="bg-primary-gradient text-white fw-bold rounded-2 px-2 py-1 me-2">AMO</span>generation</span></a>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <a class="navbar-brand sticky-logo" href="#">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false"
@@ -128,10 +136,10 @@
 
                     <div class="promo-box promo-left pt-0 pb-20 bg-transparent no-transform">
                         <div class="promo-container-big">
-                            <div class="promo-big promo-icon-bg bg-success-gradient b-0 success-shadow-big w-hover">
+                            <div class="promo-big promo-icon-bg bg-primary-gradient b-0 primary-shadow-big w-hover">
                                 <span class="h3 text-white">02</span>
                             </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15 text-hover success-hover">Виджеты, интеграции, разработка</h6>
+                            <h6 class="box-title mb-15 text-hover primary-hover">Виджеты, интеграции, разработка</h6>
                             <p class="box-description">Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
                                 massa id vestibulum lobortis cras imperdiet.</p>
                         </div><!-- / promo-container -->
@@ -139,10 +147,10 @@
 
                     <div class="promo-box promo-left pt-0 pb-20 bg-transparent no-transform">
                         <div class="promo-container-big">
-                            <div class="promo-big promo-icon-bg bg-warning-gradient b-0 warning-shadow-big w-hover">
+                            <div class="promo-big promo-icon-bg bg-primary-gradient b-0 primary-shadow-big w-hover">
                                 <span class="h3 text-white">03</span>
                             </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15 text-hover warning-hover">Техподдержка и сопровождение</h6>
+                            <h6 class="box-title mb-15 text-hover primary-hover">Техподдержка и сопровождение</h6>
                             <p class="box-description">Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
                                 massa id vestibulum lobortis cras imperdiet.</p>
                         </div><!-- / promo-container -->
@@ -288,8 +296,11 @@
     <!-- Отзывы -->
     <section class="lg bg-white" id="testimonials">
         <div class="container">
+            <div class="section-title-area text-center mb-50">
+                <h3 class="section-title">Отзывы о нас</h3>
+            </div>
             <!-- testimonial slider -->
-            <div id="testimonial-slider" class="owl-carousel owl-theme carousel-controls">
+            <div class="owl-carousel owl-theme carousel-controls" id="testimonial-slider">
                 <div class="card bg-transparent b-0 ">
                     <div class="card-body text-center">
                         <img class="m-x-auto mb-30 circle raised" style="max-width:100px"
@@ -323,6 +334,42 @@
         </div><!-- / container -->
     </section>
 
+    <!-- С нами работают -->
+    <style>
+        .partners-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .partners-container>img {
+            max-width: 150px;
+            max-height: 55px;
+            width: 100%;
+            height: 100%;
+            margin: 8px;
+        }
+    </style>
+    <section class="lg bg-light" id="partners">
+        <div class="container">
+            <div class="section-title-area text-center mb-50">
+                <h3 class="section-title">С нами работают</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="partners-container">
+                        <img src="assets/images/partners/001.svg" alt="">
+                        <img src="assets/images/partners/002.svg" alt="">
+                        <img src="assets/images/partners/003.png" alt="">
+                        <img src="assets/images/partners/004.svg" alt="">
+                        <img src="assets/images/partners/005.svg" alt="">
+                        <img src="assets/images/partners/006.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="xl bg-img bg-fixed dark text-center" id="cta" style="background-image: url(assets/images/bg-img24.jpg);">
         <div class="overlay-dark"></div>
@@ -351,12 +398,12 @@
                             </div><!-- / promo-icon-bg -->
                             <h6 class="box-title mb-15">Звоните</h6>
                             <p class="box-description mb-5">
-                                <span class="title-color">Офис:</span> <a href="tel:0123456789"
-                                    class="text-link fw-bold">0123 456 789</a>
+                                <span class="title-color">Офис:</span> <a href="tel:+74959999902"
+                                    class="text-link fw-bold">+7 (495) 999-99-01</a>
                             </p>
                             <p class="box-description">
-                                <span class="title-color">Поддержка:</span> <a href="tel:0123456789"
-                                    class="text-link fw-bold">+7 (495) 654-32-01</a>
+                                <span class="title-color">Поддержка:</span> <a href="tel:+74959999902"
+                                    class="text-link fw-bold">+7 (495) 999-99-02</a>
                             </p>
                         </div><!-- / promo-container -->
                     </div><!-- / promo-box -->
