@@ -13,7 +13,7 @@
     <title>Index - AMOgeneration</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
@@ -21,14 +21,9 @@
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet"> -->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        header h1.page-title {
-            font-size: 35px;
-        }
         .amo-img {
             position: relative;
             flex: 1 1 auto;
@@ -77,17 +72,36 @@
 
                 <div class="collapse navbar-collapse" id="navbar-toggle">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">УСЛУГИ</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+                            <div class="dropdown-menu dropdown-inverse">
+                                <a class="dropdown-item" href="#">Внедрение amoCRM</a>
+                                <a class="dropdown-item" href="#">Лицензии amoCRM</a>
+                                <a class="dropdown-item" href="#">Аудит amoCRM</a>
+                                <a class="dropdown-item" href="#">Техническая поддержка</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Виджеты</a>
+                            <div class="dropdown-menu dropdown-inverse">
+                                <a class="dropdown-item" href="#">Распределение по менеджерам</a>
+                                <a class="dropdown-item" href="#">Формирование документов</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Прочее</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">ПОРТФОЛИО</a>
+                            <a class="nav-link" href="#features">Кейсы</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">ОТЗЫВЫ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">КОНТАКТЫ</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
+                            <div class="dropdown-menu dropdown-inverse">
+                                <a class="dropdown-item" href="#">Команда AMOgenreation</a>
+                                <a class="dropdown-item" href="#">Контакты</a>
+                                <a class="dropdown-item" href="#">Вакансии</a>
+                                <a class="dropdown-item" href="#">Новости</a>
+                                <a class="dropdown-item" href="#">Материалы</a>
+                            </div>
                         </li>
                     </ul>
 
@@ -107,7 +121,7 @@
                     <h1 class="page-title no-transform text-white relative z-index-1 text-center text-lg-start">Комплексная интеграция</h1>
                     <img class="amo-img" src="assets/images/logo-amocrm.png" alt="">
                 </div>
-                <h5 class="text-white mt-30 mb-30 opc-75 relative z-index-1 text-center" style="max-width: 600px;">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</h5>
+                <p class="h5 text-white mt-30 mb-30 opc-75 relative z-index-1 text-center" style="max-width: 600px;">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</p>
                 <button type="button" class="btn btn-lg btn-primary-gradient mt-30"><i class="fas fa-paper-plane mr-5"></i> СВЯЗАТЬСЯ</button>
             </div>
         </div>
@@ -468,12 +482,39 @@
     <a href="#top" class="scroll-to-top is-hidden smooth-scroll" data-nav-status="toggle"><i
             class="fas fa-chevron-up"></i></a>
 
-    <!-- Копирайт -->
+    <!-- Футер -->
     <footer class="bg-inverse dark">
         <div class="container">
-            <div class="row v-center mobile-center">
-                <div class="col-md-4 footer-left-area tablet-top">
-                    <p>© Copyright <a href="#" class="text-primary">AMOgeneration</a></p>
+            <div class="py-2">
+                <div class="row v-center mobile-center">
+                    <div class="col-xl-4 tablet-xl-text-center footer-left-area tablet-xl-top">
+                        <img src="assets/images/logo.png" alt="" style="width: 220px;">
+                    </div>
+    
+                    <div class="col-xl-4 tablet-xl-text-center tablet-xl-top footer-center-area text-center">
+                        <p class="fw-bold">
+                            <a href="#" class="text-link mr-15">Услуги</a>
+                            <a href="#" class="text-link mr-15">Виджеты</a>
+                            <a href="#" class="text-link mr-15">Кейсы</a>
+                            <a href="#" class="text-link mr-15">О компании</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-xl-4 tablet-xl-text-center footer-right-area">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="fab fa-facebook-f"></a></li>
+                            <li class="list-inline-item"><a href="#" class="fab fa-twitter"></a></li>
+                            <li class="list-inline-item"><a href="#" class="fab fa-dribbble"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <div class="row v-center mobile-center justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <p>© Copyright <span class="text-primary">AMOgeneration</span> | <a href="#">Политика персональных данных</a> | <a href="#">Договор оферты</a></p>
+                    </div>
                 </div>
             </div>
         </div>

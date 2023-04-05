@@ -54,7 +54,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   color: #151617;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Unbounded', cursive;
   letter-spacing: 0.02rem;
   margin-top: 0;
 }
@@ -92,7 +92,7 @@ h6, .h6 {
 }
 
 html, body, a, p, ul, ol, li, div {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
@@ -165,11 +165,9 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  font-family: "Barlow", sans-serif !important;
   font-weight: 400;
   font-size: 1rem;
   color: #515253;
-  letter-spacing: 0.02rem;
   margin-bottom: 10px;
 }
 
@@ -601,7 +599,6 @@ form label {
 
 .section-sub-title {
   color: #515253;
-  font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
   padding-top: 10px;
   border-top: 1px solid #dddfe6;
@@ -1328,7 +1325,6 @@ form label {
 /*------- end of alerts-badges -------*/
 /*------- buttons -------*/
 .btn {
-  font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5rem;
@@ -2637,7 +2633,6 @@ a.btn, a.btn-social {
 
 .popover {
   max-width: 260px;
-  font-family: "Barlow", sans-serif;
   font-weight: 300;
   font-size: .875rem;
   background-color: #fff;
@@ -2728,7 +2723,6 @@ a.btn, a.btn-social {
 }
 
 .tooltip {
-  font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: .875rem;
 }
@@ -2766,7 +2760,6 @@ a.btn, a.btn-social {
 .form-control {
   color: #515253;
   background-color: #fff;
-  font-family: "Barlow", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -2852,7 +2845,6 @@ select.form-control.shop-option:not([size]):not([multiple]) {
 .custom-select {
   color: #515253;
   background-color: #fff;
-  font-family: "Barlow", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.15rem;
@@ -2876,10 +2868,7 @@ select.form-control.shop-option:not([size]):not([multiple]) {
   box-shadow: 0 0 10px rgba(188, 191, 200, 0.1), 0 0 10px rgba(188, 191, 200, 0.3) !important;
 }
 
-input, textarea {
-  font-family: "Barlow", sans-serif !important;
-  letter-spacing: 0.02rem;
-}
+input, textarea {}
 
 select.form-control:not([size]):not([multiple]) {
   height: 54px;
@@ -2913,8 +2902,6 @@ option {
 .btn-file {
   position: relative;
   overflow: hidden;
-  font-family: "Barlow", sans-serif;
-  letter-spacing: 0.04rem !important;
 }
 
 .btn-file input[type=file] {
@@ -2926,7 +2913,6 @@ option {
   min-width: 100%;
   min-height: 100%;
   font-size: 1rem;
-  font-family: "Barlow", sans-serif;
   font-weight: 400;
   text-align: right;
   filter: alpha(opacity=0);
@@ -3660,7 +3646,6 @@ textarea.form-control {
   padding: 0;
   line-height: 30px;
   font-size: 14px;
-  font-family: "Barlow", sans-serif;
   font-weight: 700;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3835,7 +3820,6 @@ textarea.form-control {
   padding: 0;
   line-height: 30px;
   font-size: 14px;
-  font-family: "Barlow", sans-serif;
   font-weight: 700;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -4536,7 +4520,6 @@ label.btn-file {
 
 .card-sub-title {
   color: #bcbfc8;
-  font-family: "Roboto Slab", serif;
   font-size: 12px;
   margin-top: 5px;
 }
@@ -5229,7 +5212,7 @@ label.btn-file {
 }
 
 .nav-link {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.04rem;
 }
@@ -5502,7 +5485,6 @@ label.btn-file {
   color: #151617;
   float: left;
   font-size: 20px;
-  font-family: "Barlow", sans-serif;
   font-weight: 700;
   margin-left: -55px;
   margin-top: -1px;
@@ -6260,6 +6242,7 @@ label.btn-file {
   font-size: 13px;
   font-weight: 700;
   padding: 8px 20px;
+  white-space: inherit;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -6990,7 +6973,6 @@ ul.timeline {
 }
 
 .pricing-title {
-  font-family: "Roboto Slab", serif;
   font-weight: 700;
   background-color: #dddfe6;
   padding: 25px 0;
@@ -7206,7 +7188,7 @@ header.fh {
 }
 
 header h1.page-title {
-  font-size: 60px;
+  font-size: 35px;
 }
 
 header .page-title {
@@ -7714,7 +7696,6 @@ header .container {
 
 .portfolio-filter a {
   color: #515253;
-  font-family: "Barlow", sans-serif !important;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04rem;
@@ -7951,15 +7932,15 @@ footer.dark.bg-primary a:hover, footer.dark.bg-primary-dark a:hover {
 
 /*---tyopgraphy ---*/
 .title-font {
-  font-family: "Barlow", sans-serif !important;
+  font-family: 'Unbounded', cursive !important;
 }
 
 .primary-font {
-  font-family: "Barlow", sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 .secondary-font {
-  font-family: "Roboto Slab", serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 .fw-light {
@@ -11673,7 +11654,7 @@ a.text-danger:focus, a.text-danger:hover {
     display: none !important;
   }
   header h1.page-title {
-    font-size: 44px;
+    font-size: 35px;
   }
   .card-columns {
     -webkit-column-count: 1;
@@ -11897,7 +11878,7 @@ a.text-danger:focus, a.text-danger:hover {
     font-size: 20px;
   }
   header h1.page-title {
-    font-size: 36px;
+    font-size: 30px;
   }
   header.xxl {
     padding: 100px 0;
