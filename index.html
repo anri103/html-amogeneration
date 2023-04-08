@@ -7,83 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="AMOgeneration">
+
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png">
-    <!-- Site Title -->
+    <link rel="icon" href="favicon.png">
+
     <title>Index - AMOgeneration</title>
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Custom Styles -->
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
-    <style>
-        .amo-img {
-            position: relative;
-            flex: 1 1 auto;
-            margin-bottom: 7px;
-            margin-left: 10px;
-        }
-
-        @media (min-width: 992px) {
-            .amo-img {}
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <div id="top"></div>
-
-    <!-- Главный экран с формой -->
-    <style>
-        .social-links .nav-link {
-            padding: 0;
-            color: #5365d4;
-        }
-        .social-links .nav-link:hover {
-            color: #0a58ca;
-        }
-    </style>
-    <header class="xxl pb-0 bg-img bg-fixed" style="background-image: url(assets/images/bg-img24.jpg)">
-        <div class="overlay-dark"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white main-nav fixed-top">
-            <div class="sticky-nav-activate fixed-top"></div>
+    <!-- Меню -->
+    <header class="header bg-white py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
+
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.svg" alt="">
-                </a>
-                <a class="navbar-brand sticky-logo" href="#">
-                    <img src="assets/images/logo.svg" alt="">
+                    <img src="img/logo.svg" alt="">
                 </a>
 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>
-                    <span class="sr-only">Меню</span>
+                <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbar-toggle">
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mt-3 mt-lg-0 ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
-                            <div class="dropdown-menu dropdown-inverse">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Внедрение amoCRM</a>
                                 <a class="dropdown-item" href="#">Лицензии amoCRM</a>
                                 <a class="dropdown-item" href="#">Аудит amoCRM</a>
@@ -92,19 +50,18 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Виджеты</a>
-                            <div class="dropdown-menu dropdown-inverse">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Распределение по менеджерам</a>
                                 <a class="dropdown-item" href="#">Формирование документов</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Прочее</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Кейсы</a>
+                            <a class="nav-link" href="#">Кейсы</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
-                            <div class="dropdown-menu dropdown-inverse">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Команда AMOgenreation</a>
                                 <a class="dropdown-item" href="#">Контакты</a>
                                 <a class="dropdown-item" href="#">Вакансии</a>
@@ -114,428 +71,625 @@
                         </li>
                     </ul>
 
-                    <ul class="social-links list-inline p-0 mb-0 ms-lg-3">
-                        <li class="list-inline-item"><a href="#" class="nav-link"><i class="fas fa-paper-plane"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-vk"></i></a></li>
+                    <ul class="list-inline d-flex mt-3 mt-lg-0 mb-0 ms-lg-3">
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18" height="18"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                            </a>
+                        </li>
                     </ul>
 
-                    <ul class="navbar-button p-0 ms-lg-3">
-                        <li class="nav-item">
-                            <a href="#"
-                                class="btn btn-sm btn-primary-gradient"><i
-                                    class="fas fa-paper-plane mr-5"></i> <span>СВЯЗАТЬСЯ</span></a>
+                    <ul class="list-inline d-flex mt-3 mt-lg-0 mb-0 ms-lg-3">
+                        <li class="list-inline-item">
+                            <a href="#mainForm" class="btn btn-sm btn-primary btn-primary-gradient" data-bs-toggle="modal" data-bs-target="#mainForm">Связаться</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
-        <div class="container relative">
-            <div class="d-flex flex-column align-items-center">
-                <div class="relative d-flex flex-column flex-lg-row align-items-center">
-                    <h1 class="page-title no-transform text-white relative z-index-1 text-center text-lg-start">Комплексная интеграция</h1>
-                    <img class="amo-img" src="assets/images/logo-amocrm.png" alt="">
-                </div>
-                <p class="h5 text-white mt-30 mb-30 opc-75 relative z-index-1 text-center" style="max-width: 600px;">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</p>
-                <button type="button" class="btn btn-lg btn-primary-gradient mt-30"><i class="fas fa-paper-plane mr-5"></i> СВЯЗАТЬСЯ</button>
-            </div>
-        </div>
-        <img src="assets/images/angles.svg" alt="" class="header-image-bottom">
     </header>
 
-    <!-- Наши фичи -->
-    <section class="lg" id="features">
-        <div class="container">
-            <div class="row v-center">
-                <div class="col-lg-6 tablet-lg-top-30">
-                    <img src="assets/images/cover-7950d9e808fc674785cf426b02c9691ae893b2204a95ad0a10209549cdf576b9.png" alt="">
-                </div><!-- / column -->
-
-                <div class="col-lg-6">
-                    <div class="promo-box promo-left pt-0 pb-20 bg-transparent no-transform">
-                        <div class="promo-container-big">
-                            <div class="promo-big promo-icon-bg bg-primary-gradient b-0 primary-shadow-big w-hover">
-                                <span class="h3 text-white">01</span>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15 text-hover primary-hover">Внедрение и стратегия развития</h6>
-                            <p class="box-description">Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
-                                massa id vestibulum lobortis cras imperdiet.</p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
-
-                    <div class="promo-box promo-left pt-0 pb-20 bg-transparent no-transform">
-                        <div class="promo-container-big">
-                            <div class="promo-big promo-icon-bg bg-primary-gradient b-0 primary-shadow-big w-hover">
-                                <span class="h3 text-white">02</span>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15 text-hover primary-hover">Виджеты, интеграции, разработка</h6>
-                            <p class="box-description">Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
-                                massa id vestibulum lobortis cras imperdiet.</p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
-
-                    <div class="promo-box promo-left pt-0 pb-20 bg-transparent no-transform">
-                        <div class="promo-container-big">
-                            <div class="promo-big promo-icon-bg bg-primary-gradient b-0 primary-shadow-big w-hover">
-                                <span class="h3 text-white">03</span>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15 text-hover primary-hover">Техподдержка и сопровождение</h6>
-                            <p class="box-description">Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
-                                massa id vestibulum lobortis cras imperdiet.</p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
-                </div><!-- / column -->
-            </div><!-- / row -->
-        </div><!-- / container -->
-    </section>
-
-    <!-- Портфолио -->
-    <section class="lg bg-img bg-fixed" id="portfolio" style="background-image: url(assets/images/bg-img6.jpg)">
-        <div class="overlay-dark"></div>
-        <div class="container">
-            <div class="section-title-area text-center mb-70">
-                <h3 class="section-title text-white">Портфолио</h3>
-                <h5 class="section-sub-title text-secondary fs-12">Выполненные проекты</h5>
-            </div><!-- / section-title-area -->
-            <div class="row g-4 portfolio">
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/001.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Объединили работу диспетчеров и выездных бригад с помощью amoCRM</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/002.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Кастомный виджет "Управление активностью рабочего" для студии витаминной терапии</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/003.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Как сдать в аренду 246 000 м² с помощью amoCRM, складская логистика Красной Пресни</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/004.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Внедрение amoCRM для компании-дистрибьютора косметики</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/005.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Автоматизация продаж для учебного центра</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-full-height">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/images/portfolio/006.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title project-icons">
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="card-body p-y-30 text-center">
-                            <a href="#" class="card-title title-link primary-hover fs-16 fw-bold">Автоматизировали процесс передачи заявки дилерам в нужный регион</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Отзывы -->
-    <section class="lg bg-white" id="testimonials">
-        <div class="container">
-            <div class="section-title-area text-center mb-50">
-                <h3 class="section-title">Отзывы о нас</h3>
-            </div>
-            <!-- testimonial slider -->
-            <div class="owl-carousel owl-theme carousel-controls" id="testimonial-slider">
-                <div class="card bg-transparent b-0 ">
-                    <div class="card-body text-center">
-                        <img class="m-x-auto mb-30 circle raised" style="max-width:100px"
-                            src="assets/images/square3.jpg" alt="">
-                        <h6 class="card-title mb-5">Наталья Локтионова</h6>
-                        <p class="mb-0 fs-10 fw-regular">Руководитель по работе с клиентами д-ра Локтионова</p>
-                        <p class="card-text m-y-15 m-x-auto w50">Ребята автоматизировали нам amoCRM, мы довольны, общаются по делу, четко, быстро поняли нашу задачу. Мы описали наши бизнес процессы, нам предложили решение, мы потестировали, внесли небольшие корректировки - все оперативно и без лишних вопросов. Пользуемся почти год, заказывали также доработки, в процессе использования решили автоматизировать постпродажное обслуживание клиентов.</p>
-                    </div><!-- / card-body -->
-                </div><!-- / card -->
-
-                <div class="card bg-transparent b-0">
-                    <div class="card-body text-center">
-                        <img class="m-x-auto mb-30 circle raised" style="max-width:100px"
-                            src="assets/images/square4.jpg" alt="">
-                        <h6 class="card-title mb-5">Максим Скопа</h6>
-                        <p class="mb-0 fs-10 fw-regular">Руководитель отдела продаж в ООО "НеоТек"</p>
-                        <p class="card-text m-y-15 m-x-auto w50">Хочется отметить профессионализм и квалификацию сотрудников компании AMOgeneration, спасибо ребятам за компетентность, оперативность и стремление сделать свою работу качественно и своевременно. Работаем уже год в amoCRM пока нареканий в работе нет, надеемся не будут</p>
-                    </div><!-- / card-body -->
-                </div><!-- / card -->
-                <div class="card bg-transparent b-0">
-                    <div class="card-body text-center">
-                        <img class="m-x-auto mb-30 circle raised" style="max-width:100px"
-                            src="assets/images/square1.jpg" alt="">
-                        <h6 class="card-title mb-5">Елена Динман</h6>
-                        <p class="mb-0 fs-10 fw-regular">Владелец IT-школы MyFreedom</p>
-                        <p class="card-text m-y-15 m-x-auto w50">Работали с ребятами по автоматизации CRM, у нас было много нестандартных процессов. Они всегда придумывали для нас хорошие решения, переделывали, была постоянная поддержка. Планируем второй этап автоматизации. Спасибо! Очень толковые ребята.</p>
-                    </div><!-- / card-body -->
-                </div><!-- / card -->
-            </div>
-            <!-- / testimonial-slider -->
-        </div><!-- / container -->
-    </section>
-
-    <!-- С нами работают -->
-    <style>
-        .partners-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .partners-container>img {
-            max-width: 150px;
-            max-height: 55px;
-            width: 100%;
-            height: 100%;
-            margin: 8px;
-        }
-    </style>
-    <section class="lg bg-light" id="partners">
-        <div class="container">
-            <div class="section-title-area text-center mb-50">
-                <h3 class="section-title">С нами работают</h3>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="partners-container">
-                        <img src="assets/images/partners/001.svg" alt="">
-                        <img src="assets/images/partners/002.svg" alt="">
-                        <img src="assets/images/partners/003.png" alt="">
-                        <img src="assets/images/partners/004.svg" alt="">
-                        <img src="assets/images/partners/005.svg" alt="">
-                        <img src="assets/images/partners/006.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="xl bg-img bg-fixed dark text-center" id="cta" style="background-image: url(assets/images/bg-img24.jpg);">
-        <div class="overlay-dark"></div>
-        <div class="cta">
+    <!-- Фиксированное меню -->
+    <div class="header-fixed fixed-top bg-white shadow-sm py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <h4 class="mb-15">Получите чек-лист</h4>
-                <p class="lead mb-30 w-40 m-x-auto">Который поможет вам самостоятельно обнаружить проблемные зоны в вашей CRM-системе и найти пути к их решению.</p>
-                <a href="#" class="btn btn-primary pill m-5">Получить чек-лист</a>
-            </div><!-- / container -->
-        </div><!-- / cta -->
-    </section>
 
-    <!-- Контакты -->
-    <section class="lg bg-white" id="contacts">
-        <div class="container">
-            <div class="row v-center">
-                <div class="col-md-6 tablet-top-30">
-                    <h3 class="mb-20">Будем на связи</h3>
-                    <p class="mb-20 w-90">Etiam varius ex vitae rutrum suscipit. Nulla non sagittis augue. Phasellus
-                        commodo blandit ligula a tempor. Donec non sapien quis ante hendrerit.</p>
-                    <div class="promo-box p-y-10 p-x-0 promo-left bg-transparent mb-15 no-transform">
-                        <div class="promo-container-big-sm">
-                            <div
-                                class="promo-big icon-sm promo-icon-bg circle b-0 bg-success success-shadow-big w-hover mb-25">
-                                <i class="fas fa-phone promo-icon text-white"></i>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15">Звоните</h6>
-                            <p class="box-description mb-5">
-                                <span class="title-color">Офис:</span> <a href="tel:+74959999902"
-                                    class="text-link fw-bold">+7 (495) 999-99-01</a>
-                            </p>
-                            <p class="box-description">
-                                <span class="title-color">Поддержка:</span> <a href="tel:+74959999902"
-                                    class="text-link fw-bold">+7 (495) 999-99-02</a>
-                            </p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
 
-                    <div class="promo-box p-y-10 p-x-0 promo-left bg-transparent mb-0 no-transform">
-                        <div class="promo-container-big-sm">
-                            <div
-                                class="promo-big icon-sm promo-icon-bg circle b-0 bg-info info-shadow-big w-hover mb-25">
-                                <i class="fas fa-envelope promo-icon text-white"></i>
-                            </div><!-- / promo-icon-bg -->
-                            <h6 class="box-title mb-15">Написать email</h6>
-                            <p class="box-description mb-5">
-                                <span class="title-color">Офис:</span> <a href="mailto:info@yoursite.com"
-                                    class="text-link fw-bold">info@yoursite.com</a>
-                            </p>
-                            <p class="box-description">
-                                <span class="title-color">Поддержка:</span> <a href="mailto:support@yoursite.com"
-                                    class="text-link fw-bold">support@yoursite.com</a>
-                            </p>
-                        </div><!-- / promo-container -->
-                    </div><!-- / promo-box -->
-                </div><!-- / column -->
-                <div class="col-md-6">
-                    <form class="validation-inner" id="form-validation2" novalidate="novalidate">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="contact-name2" name="inputName2"
-                                        placeholder="Ваше Имя" required="">
-                                </div><!-- / form-group -->
-                            </div><!-- / column -->
+                <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarNavFixed" aria-controls="navbarNavFixed" aria-expanded="false" aria-label="Toggle navigation">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="contact-email2" name="inputEmail2"
-                                        placeholder="Ваш Email" required="">
-                                </div><!-- / form-group -->
-                            </div><!-- / column -->
+                <div class="collapse navbar-collapse" id="navbarNavFixed">
+                    <ul class="navbar-nav mt-3 mt-lg-0 ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Внедрение amoCRM</a>
+                                <a class="dropdown-item" href="#">Лицензии amoCRM</a>
+                                <a class="dropdown-item" href="#">Аудит amoCRM</a>
+                                <a class="dropdown-item" href="#">Техническая поддержка</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Виджеты</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Распределение по менеджерам</a>
+                                <a class="dropdown-item" href="#">Формирование документов</a>
+                                <a class="dropdown-item" href="#">Прочее</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Кейсы</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Команда AMOgenreation</a>
+                                <a class="dropdown-item" href="#">Контакты</a>
+                                <a class="dropdown-item" href="#">Вакансии</a>
+                                <a class="dropdown-item" href="#">Новости</a>
+                                <a class="dropdown-item" href="#">Материалы</a>
+                            </div>
+                        </li>
+                    </ul>
 
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="contact-subject2" name="inputSubject2"
-                                        placeholder="Тема письма">
-                                </div><!-- / form-group -->
-                            </div><!-- / column -->
-                        </div><!-- / row -->
-                        <div class="form-group">
-                            <textarea id="contact-message2" class="form-control" name="inputMessage2" rows="5"
-                                placeholder="Сообщение" required=""
-                                style="min-height: 115px; max-height: 150px;"></textarea>
+                    <ul class="list-inline d-flex mt-3 mt-lg-0 mb-0 ms-lg-3">
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18" height="18"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-inline d-flex mt-3 mt-lg-0 mb-0 ms-lg-3">
+                        <li class="list-inline-item">
+                            <a href="#mainForm" class="btn btn-sm btn-primary btn-primary-gradient" data-bs-toggle="modal" data-bs-target="#mainForm">Связаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <main class="main">
+
+        <!-- Главный экран -->
+        <section class="section lg position-relative bg-img" style="background-image: url(img/bg-img24.jpg)">
+            <div class="overlay-dark z-index-1"></div>
+            <div class="container">
+                <div class="container-hero text-center position-relative z-index-2">
+                    <div class="d-flex flex-column flex-lg-row align-items-center" data-aos="fade-up" data-aos-delay="100">
+                        <h1 class="page-title text-white">Комплексная интеграция</h1>
+                        <img class="amo-img" src="img/logo-amocrm.png" alt="">
+                    </div>
+                    <p class="text-white mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">Внедрение amoCRM позволит принимать все запросы с форм на сайте, по телефону, e-mail и в мессенджерах в одной программе. Больше никаких потерянных клиентов и только грамотная аналитика обращений.</p>
+                    <button type="button" class="btn btn-lg btn-primary btn-primary-gradient mt-4" data-aos="fade-up" data-aos-delay="300">Связаться</button>
+                </div>
+            </div>
+            <img class="position-absolute bottom-0 z-index-1" src="img/angles.svg" alt="">
+        </section>
+
+        <!-- Наши фичи -->
+        <section class="section lg bg-light" id="features">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                        <img src="img/cover-7950d9e808fc674785cf426b02c9691ae893b2204a95ad0a10209549cdf576b9.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="features-container">
+                            <!-- Item -->
+                            <div class="promo-box" data-aos="fade-right">
+                                <div class="d-flex">
+                                    <div class="promo-icon bg-primary-gradient primary-shadow-big">
+                                        <span class="h4 text-white mb-0">01</span>
+                                    </div>
+                                    <div class="promo-text">
+                                        <p class="h6 mb-2">Внедрение и стратегия развития</p>
+                                        <div class="promo-description">
+                                            <p>Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
+                                            massa id vestibulum lobortis cras imperdiet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!-- Item -->
+                            <div class="promo-box" data-aos="fade-right">
+                                <div class="d-flex">
+                                    <div class="promo-icon bg-primary-gradient primary-shadow-big">
+                                        <span class="h4 text-white mb-0">02</span>
+                                    </div>
+                                    <div class="promo-text">
+                                        <p class="h6 mb-2">Виджеты, интеграции, разработка</p>
+                                        <div class="promo-description">
+                                            <p>Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
+                                            massa id vestibulum lobortis cras imperdiet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!-- Item -->
+                            <div class="promo-box" data-aos="fade-right">
+                                <div class="d-flex">
+                                    <div class="promo-icon bg-primary-gradient primary-shadow-big">
+                                        <span class="h4 text-white mb-0">03</span>
+                                    </div>
+                                    <div class="promo-text">
+                                        <p class="h6 mb-2">Техподдержка и сопровождение</p>
+                                        <div class="promo-description">
+                                            <p>Mauris vitae augue turpis. Aenean sed ornare sapien. Sed varius
+                                            massa id vestibulum lobortis cras imperdiet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary-gradient btn-submit"><i
-                                class="fas fa-paper-plane mr-5"></i> Отправить</button>
-                        <p class="text-center mt-10 fs-12 secondary-font text-secondary-dark mb-0">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
-                    </form><!-- / form-group -->
-                </div><!-- / column -->
-            </div><!-- / row -->
-        </div><!-- / container -->
-    </section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Кнопка Наверх -->
-    <a href="#top" class="scroll-to-top is-hidden smooth-scroll" data-nav-status="toggle"><i
-            class="fas fa-chevron-up"></i></a>
+        <!-- Портфолио -->
+        <section class="section lg position-relative bg-img bg-fixed" id="portfolio" style="background-image: url(img/bg-img6.jpg)">
+            <div class="overlay-dark"></div>
+            <div class="container">                
+                <div class="position-relative">
+
+                    <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="h3 text-white">Портфолио</h3>
+                        <p class="h5 text-secondary fs-12">Выполненные проекты</p>
+                    </div>
+    
+                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/001.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Объединили работу диспетчеров и выездных бригад с помощью amoCRM</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/002.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Кастомный виджет "Управление активностью рабочего" для студии витаминной терапии</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/003.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Как сдать в аренду 246 000 м² с помощью amoCRM, складская логистика Красной Пресни</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/004.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Внедрение amoCRM для компании-дистрибьютора косметики</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/005.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Автоматизация продаж для учебного центра</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Item -->
+                        <div class="col" data-aos="fade-up">
+                            <div class="card card-portfolio overflow-hidden rounded-4 h-100">
+                                <div class="card-hovereffect">
+                                    <img class="img-responsive" src="img/portfolio/006.jpg" alt="">
+                                    <div class="card-overlay">
+                                        <div class="card-link">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18" fill="#ffffff"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title fs-16 fw-bold">Автоматизировали процесс передачи заявки дилерам в нужный регион</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="section lg bg-white" id="testimonials">
+            <div class="container">
+
+                <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="h3">Отзывы о нас</h3>
+                </div>
+
+                <div class="swiper testimonialSwiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper mb-4">
+
+                        <div class="swiper-slide">
+                            <div class="card card-testimonial">
+                                <div class="card-body text-center">
+                                    <img class="mx-auto mb-4 rounded-circle" style="max-width:100px" src="img/square3.jpg" alt="">
+                                    <p class="h6 card-title">Наталья Локтионова</p>
+                                    <p class="fs-12 mb-3">Руководитель по работе с клиентами д-ра Локтионова</p>
+                                    <div class="card-text mx-auto" style="max-width: 600px;">
+                                        <p>Ребята автоматизировали нам amoCRM, мы довольны, общаются по делу, четко, быстро поняли нашу задачу. Мы описали наши бизнес процессы, нам предложили решение, мы потестировали, внесли небольшие корректировки - все оперативно и без лишних вопросов. Пользуемся почти год, заказывали также доработки, в процессе использования решили автоматизировать постпродажное обслуживание клиентов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="card card-testimonial">
+                                <div class="card-body text-center">
+                                    <img class="mx-auto mb-4 rounded-circle" style="max-width:100px" src="img/square4.jpg" alt="">
+                                    <p class="h6 card-title">Максим Скопа</p>
+                                    <p class="fs-12 mb-3">Руководитель отдела продаж в ООО "НеоТек"</p>
+                                    <div class="card-text mx-auto" style="max-width: 600px;">
+                                        <p>Хочется отметить профессионализм и квалификацию сотрудников компании AMOgeneration, спасибо ребятам за компетентность, оперативность и стремление сделать свою работу качественно и своевременно. Работаем уже год в amoCRM пока нареканий в работе нет, надеемся не будут</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="card card-testimonial">
+                                <div class="card-body text-center">
+                                    <img class="mx-auto mb-4 rounded-circle" style="max-width:100px" src="img/square1.jpg" alt="">
+                                    <p class="h6 card-title">Елена Динман</p>
+                                    <p class="fs-12 mb-3">Владелец IT-школы MyFreedom</p>
+                                    <div class="card-text mx-auto" style="max-width: 600px;">
+                                        <p>Работали с ребятами по автоматизации CRM, у нас было много нестандартных процессов. Они всегда придумывали для нас хорошие решения, переделывали, была постоянная поддержка. Планируем второй этап автоматизации. Спасибо! Очень толковые ребята.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- С нами работают -->
+        <section class="section lg bg-light" id="partners">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="h3">С нами работают</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="partners-container" data-aos="fade-up" data-aos-delay="200">
+                            <div class="partners-item">
+                                <img src="img/partners/001.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/002.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/003.png" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/004.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/005.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/003.png" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/006.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/004.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/005.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/004.svg" alt="">
+                            </div>                            
+                            <div class="partners-item">
+                                <img src="img/partners/003.png" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/005.svg" alt="">
+                            </div>
+                            <div class="partners-item">
+                                <img src="img/partners/004.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section lg position-relative bg-img bg-fixed" id="cta" style="background-image: url(img/bg-img24.jpg);">
+            <div class="overlay-dark"></div>
+                <div class="container">
+                    <div class="position-relative text-center">
+                        <h4 class="h4 text-white" data-aos="fade-up" data-aos-delay="100">Получите чек-лист</h4>
+                        <div class="mx-auto text-white mt-3" style="max-width: 520px;" data-aos="fade-up" data-aos-delay="200">
+                            <p>Который поможет вам самостоятельно обнаружить проблемные зоны в вашей CRM-системе и найти пути к их решению.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="300">
+                            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="#ffffff"><path d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>
+                            Получить чек-лист
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section lg bg-white" id="contacts">
+            <div class="container">
+                <div class="row g-4 align-items-center justify-content-between">
+
+                    <div class="col-md-6 col-lg-5" data-aos="fade-right">
+                        <h3 class="mb-4">Будем на связи</h3>
+                        <div>
+                            <p>Etiam varius ex vitae rutrum suscipit. Nulla non sagittis augue. Phasellus
+                                commodo blandit ligula a tempor.c non sapien quis ante hendrerit.</p>
+                            <p>Etiam varius ex vitae rutrum suscipit. Nulla non sagittis augue. Phasellus
+                                commodo blandit ligula a tempor.c non sapien quis ante hendrerit.</p>
+                        </div>
+
+                        <div class="contacts-container mt-5">
+                            <!-- Item -->
+                            <div class="promo-box">
+                                <div class="d-flex">
+                                    <div class="promo-icon rounded-circle bg-success success-shadow-big" style="width: 50px; height: 50px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="#ffffff"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    </div>
+                                    <div class="promo-text">
+                                        <p class="h6 mb-2">Звоните</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <span>Офис:</span> <a href="tel:+74959999902"><strong>+7 (495) 999-99-01</strong></a>
+                                            </li>
+                                            <li>
+                                                <span>Поддержка:</span> <a href="tel:+74959999902"><strong>+7 (495) 999-99-02</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="promo-box">
+                                <div class="d-flex">
+                                    <div class="promo-icon rounded-circle bg-info info-shadow-big" style="width: 50px; height: 50px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="#ffffff"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                                    </div>
+                                    <div class="promo-text">
+                                        <p class="h6 mb-2">Написать email</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <span>Офис:</span> <a href="mailto:info@yoursite.com"><strong>info@yoursite.com</strong></a>
+                                            </li>
+                                            <li>
+                                                <span>Поддержка:</span> <a href="mailto:support@yoursite.com"><strong>support@yoursite.com</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-5" data-aos="fade-left">
+                        <form action="thank-you.html">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Ваше Имя">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Ваш Телефон">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Сообщение" style="min-height: 110px; max-height: 150px;"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-primary-gradient w-100">
+                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="#ffffff"><path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
+                                        Отправить
+                                    </button>
+                                    <p class="text-center text-secondary fs-12 mt-2 mb-0">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Футер -->
-    <footer class="footer-widget-area bg-light">
+    <footer class="footer bg-light">
         <div class="container">
             <div class="py-2">
-                <div class="row v-center mobile-center">
-                    <div class="col-xl-4 tablet-xl-text-center footer-left-area tablet-xl-top">
-                        <img src="assets/images/logo.svg" alt="" style="width: 270px;">
+                <div class="row g-4">
+
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <img class="d-inline-block" src="img/logo.svg" alt="" style="width: 270px;">
+                        <div class="text-secondary fs-12 mt-3 d-none d-lg-block">
+                            <p>ИП КОВАЛЕВ АЛЕКСАНДР АНДРЕЕВИЧ <br>ИНН 781018791612 <br>р/с 40802810900002448653 <br>АО "ТИНЬКОФФ БАНК" <br> ИНН банка 7710140679 <br> БИК банка 044525974 <br>к/с 30101810145250000974</p>
+                        </div>
                     </div>
     
-                    <div class="col-xl-4 tablet-xl-text-center tablet-xl-top footer-center-area text-center">
-                        <p class="fw-bold">
-                            <a href="#" class="text-link mr-15">Услуги</a>
-                            <a href="#" class="text-link mr-15">Виджеты</a>
-                            <a href="#" class="text-link mr-15">Кейсы</a>
-                            <a href="#" class="text-link mr-15">О компании</a>
-                        </p>
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <p class="h6">Меню</p>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Виджеты</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Кейсы</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="h6">Партнерам</p>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Виджеты</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Кейсы</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
     
-                    <div class="col-xl-4 tablet-xl-text-center footer-right-area">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><a href="#" class="nav-link"><i class="fas fa-paper-plane"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-vk"></i></a></li>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <p class="h6">Контакты</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="nav-link p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="nav-link p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="nav-link p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18" height="18"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:+74959999902">+7 (495) 999-99-01</a>
+                            </li>
+                            <li>
+                                <a href="tel:+74959999902">+7 (495) 999-99-02</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                            </li>
+                            <li>
+                                <a href="#">Барвиха Сп, Московская обл., 143083</a>
+                            </li>
                         </ul>
                     </div>
+
+                    <div class="col-12 text-center text-lg-start d-lg-none">
+                        <div class="text-secondary fs-12 mt-3">
+                            <p>ИП КОВАЛЕВ АЛЕКСАНДР АНДРЕЕВИЧ <br>ИНН 781018791612 <br>р/с 40802810900002448653 <br>АО "ТИНЬКОФФ БАНК" <br> ИНН банка 7710140679 <br> БИК банка 044525974 <br>к/с 30101810145250000974</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="py-2">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="text-center">ИП КОВАЛЕВ АЛЕКСАНДР АНДРЕЕВИЧ <br>ИНН 781018791612 <br>р/с 40802810900002448653 <br>АО "ТИНЬКОФФ БАНК" <br> ИНН банка 7710140679 <br> БИК банка 044525974 <br>к/с 30101810145250000974</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="py-2">
-                <div class="row v-center mobile-center justify-content-center">
-                    <div class="col-md-10 text-center">
+                    <div class="col-lg-10 text-center">
                         <p>© Copyright <span class="text-primary">AMOgeneration</span> | <a href="#">Политика персональных данных</a> | <a href="#">Договор оферты</a></p>
                     </div>
                 </div>
@@ -543,43 +697,60 @@
         </div>
     </footer>
 
-    <!-- core JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- / core JavaScript -->
+    <!-- Кнопка Наверх -->
+    <button type="button" class="btn btn-icon btn-scroll-top rounded-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" fill="#ffffff"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+    </button>
 
-    <!-- preloader -->
-    <script src="assets/js/preloader.js"></script>
-    <!-- / preloader -->
+    <!-- Modal Main Form -->
+    <div class="modal modal-mainForm fade" id="mainForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p class="h4">Закажи интеграцию amoCRM для своего бизнеса</p>
+                        <p>Наши менеджеры свяжутся с Вами в ближайшее время</p>
+                    </div>
+                    <form action="thank-you.html">
+                        <div class="mb-4">
+                            <label for="fname" class="form-label">Имя</label>
+                            <input type="text" id="fname" class="form-control" required="">
+                            <div class="invalid-feedback">Пожалуйста, введите ваше имя!</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="text" id="phone" class="form-control" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <div class="mb-4">
+                            <label for="method" class="form-label">Способ связи</label>
+                            <select id="method" class="form-select">
+                                <option value="phone">Телефон</option>
+                                <option value="wa">What's App</option>
+                                <option value="telegram">Telegram</option>
+                                <option value="viber">Viber</option>
+                            </select>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary w-100" data-bs-target="#mainThank"
+                                data-bs-toggle="modal">Оставить заявку</button>
+                            <p class="text-center text-secondary fs-12 mt-2 mb-0">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- smooth scroll -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/smooth-scroll.js"></script>
-    <!-- / smooth scroll -->
-
-    <!-- hide nav -->
-    <script src="assets/js/hide-nav.js"></script>
-    <!-- / hide nav -->
-
-    <!-- form validation -->
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/form-validation.js"></script>
-    <!-- end of form validation -->
-
-    <!-- Owl Carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
-        $('#testimonial-slider').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            dots: false,
-            navText: ["<i class='fas fa-chevron-left text-secondary-dark'></i>", "<i class='fas fa-chevron-right text-secondary-dark'></i>"],
-            items: 1,
-            smartSpeed: 1200
-        })
-    </script>
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
