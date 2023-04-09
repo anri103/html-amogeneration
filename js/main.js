@@ -1,14 +1,15 @@
-window.onscroll = function () {
-    const windowScroll = window.scrollY;
-    const fixedMenu = document.querySelector('.header-fixed');
-    if (windowScroll > 500) {
-        fixedMenu.classList.add('show');
+// [ Fixed Menu Shadow ]
+const fixedMenu = document.querySelector('.header-fixed');
+const fixedMenuShadow = () => {
+    if (window.scrollY > 400) {
+        fixedMenu.classList.add('shadow-sm');
+    } else {
+        fixedMenu.classList.remove('shadow-sm');
     }
-    else {
-        fixedMenu.classList.remove('show');
-    }
-}
-
+};
+document.addEventListener('scroll', () => {
+    fixedMenuShadow();
+});
 // [ Back to Top Button ]
 const scrollBtn = document.querySelector('.btn-scroll-top');
 const btnVisibility = () => {
