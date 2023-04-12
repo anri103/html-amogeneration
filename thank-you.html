@@ -23,7 +23,7 @@
 <body>
 
     <!-- Меню -->
-    <header class="header header-fixed fixed-top bg-white py-2 py-lg-0">
+    <header class="header header-fixed sticky-top bg-white py-2 py-lg-0">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
 
@@ -149,23 +149,28 @@
         </div>
     </header>
 
-    <main class="main">
-
-        <!-- Секция: «Главный экран A» -->
+    <main class="main bg-light">
+        
+        <!-- Секция: «Главный экран B» -->
         <!-- У пользователя должна быть возможность указать свой кастомный id для секции -->
         <!-- В админке должна быть возможность вкл/выкл секцию -->
-        <!-- У каждого элемента с анимацией должно быть простое текстовое поле, куда можно вписать параметры анимации, например «data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"» -->
-        <section class="section-hero-a section xl position-relative bg-img" id="" style="background-image: url(img/bg-img5.jpg)">
-            <div class="overlay-dark z-index-1"></div>
+        <!-- Возможность добавлять свою картинку на фон или не добавлять вовсе  -->
+        <!-- В админке должна быть возможность выбрать серый (bg-light), белый (bg-white) или тёмный (bg-dark) фон секции -->
+        <section class="section-hero-b section lg position-relative bg-dark bg-img" id="" style="background-image: url(img/bg-img5.jpg)">
             <div class="container">
-                <div class="container-hero text-center position-relative z-index-3">
+                <div class="container-hero position-relative text-center z-index-2">
                     <div class="d-flex flex-column flex-lg-row align-items-center" data-aos="fade-up" data-aos-delay="100">
                         <h1 class="page-title text-white">Спасибо!</h1>
                     </div>
-                    <p class="text-white mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">Вы заполнили форму, в скором времени наши менеджеры свяжутся с Вами.</p>
+                    <div class="text-white mx-auto mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
+                        <p>Вы заполнили форму, в скором времени наши менеджеры свяжутся с Вами.</p>
+                    </div>
+                    <!-- Ссылка либо на модалку, либо на страницу -->
+                    <a class="btn btn-lg btn-primary btn-primary-gradient mt-4" href="#" data-aos="fade-up" data-aos-delay="300">Перейти на главную</a>
                 </div>
             </div>
-            <img class="img-overlay-bottom z-index-2" src="img/angles.svg" alt="">
+            <!-- Возможность добавлять свою картинку или не добавлять вовсе  -->
+            <img class="img-overlay-bottom z-index-1" src="img/angles.svg" alt="">
         </section>
 
     </main>
