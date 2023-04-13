@@ -212,6 +212,10 @@ img {
     }
 }
 
+.h-shadow:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ + TYPOGRAPHY ]*/
 
@@ -728,6 +732,10 @@ textarea {
 
 .card-hovereffect .card-link a:hover {
     background: #311d53;
+}
+
+.card.card-widget {
+    transition: all 0.3s ease;
 }
 
 /*------------------------------------------------------------------

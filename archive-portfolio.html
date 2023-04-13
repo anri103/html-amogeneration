@@ -151,32 +151,34 @@
 
     <main class="main bg-light">
 
-        <!-- Секция: «Главный экран A» -->
-        <!-- У пользователя должна быть возможность указать свой кастомный id для секции -->
-        <!-- В админке должна быть возможность вкл/выкл секцию -->
-        <section class="section-hero-a section xl position-relative bg-img" id="" style="background-image: url(img/bg-img4.jpg)">
-            <div class="overlay-dark z-index-1"></div>
+        <!-- Секция: «Главный экран B» -->
+        <!-- Должна быть возможность указать свои классы для секции -->
+        <!-- Должна быть возможность указать свой id для секции -->
+        <!-- Должна быть возможность вкл/выкл секцию -->
+        <!-- Возможность добавлять свою картинку на фон -->
+        <section class="section-hero-b section lg position-relative bg-dark bg-img" id="" style="background-image: url(img/bg-img4.jpg)">
+            <div class="overlay-dark"></div>
             <div class="container">
-                <div class="container-hero text-center position-relative z-index-3">
+                <div class="container-hero position-relative text-center z-index-2">
                     <div class="d-flex flex-column flex-lg-row align-items-center" data-aos="fade-up" data-aos-delay="100">
                         <h1 class="page-title text-white">Кейсы внедрений amoCRM</h1>
                     </div>
-                    <p class="text-white mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">Здесь мы делимся опытом — как, используя amoCRM и облачные сервисы, можно увеличить показатели компании используя те же ресурсы. Реальные кейсы и отзывы клиентов.</p>
+                    <div class="text-white mx-auto mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
+                        <p>Здесь мы делимся опытом — как, используя amoCRM и облачные сервисы, можно увеличить показатели компании используя те же ресурсы. Реальные кейсы и отзывы клиентов.</p>
+                    </div>
                 </div>
             </div>
-            <img class="img-overlay-bottom z-index-2" src="img/angles.svg" alt="">
+            <!-- Возможность добавлять свою картинку -->
+            <!-- <img class="img-overlay-bottom z-index-1" src="img/angles.svg" alt=""> -->
+            <!-- Закомментил картинку просто для того чтобы в вёрстке не отображать -->
         </section>
 
         <!-- Секция: «Архив портфолио» -->
-        <!-- У пользователя должна быть возможность указать свой кастомный id для секции -->
-        <!-- В админке должна быть возможность вкл/выкл секцию -->
+        <!-- Должна быть возможность указать свои классы для секции -->
+        <!-- Должна быть возможность указать свой id для секции -->
+        <!-- Должна быть возможность вкл/выкл секцию -->
         <section class="section-archive-portfolio section lg bg-light" id="">
             <div class="container">
-
-                <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="h3">Портфолио</h3>
-                    <p class="h5 text-secondary fs-12">Выполненные проекты</p>
-                </div>
 
                 <!-- Отображаем 9 штук -->
                 <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
@@ -354,7 +356,7 @@
 
                 </div>
 
-                <div class="text-center mt-5">
+                <div class="text-center mt-5" data-aos="fade-up">
                     <button type="button" class="btn btn-primary">Показать еще</button>
                 </div>
 

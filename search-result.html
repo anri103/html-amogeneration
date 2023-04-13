@@ -11,7 +11,7 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.png">
 
-    <title>404 - AMOgeneration</title>
+    <title>Search result - AMOgeneration</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -151,28 +151,132 @@
 
     <main class="main bg-light">
 
-        <!-- Секция: «Главный экран B» -->
-        <!-- Должна быть возможность указать свои классы для секции -->
-        <!-- Должна быть возможность указать свой id для секции -->
-        <!-- Должна быть возможность вкл/выкл секцию -->
-        <!-- Возможность добавлять свою картинку на фон -->
-        <section class="section-hero-b section lg position-relative bg-dark bg-img" id="" style="background-image: url(img/bg-img4.jpg)">
-            <div class="overlay-dark"></div>
+        <style>
+            .search-results {
+                --bs-link-color: #120e1e;
+                --bs-link-hover-color: #5d3997;
+            }
+            .search-results-item {
+                margin-top: 3rem;
+            }
+            .search-results-item::marker {
+                color: #151617;
+                font-family: 'Unbounded', cursive;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+        </style>
+        <section class="section-search-result section lg bg-white" id="">
             <div class="container">
-                <div class="container-hero position-relative text-center z-index-2">
-                    <div class="d-flex flex-column flex-lg-row align-items-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1 class="page-title text-white">404</h1>
-                    </div>
-                    <div class="text-white mx-auto mt-3" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
-                        <p>Такой страницы нет.</p>
-                    </div>
-                    <!-- Ссылка либо на модалку, либо на страницу -->
-                    <a class="btn btn-lg btn-primary btn-primary-gradient mt-4" href="#" data-aos="fade-up" data-aos-delay="300">Перейти на главную</a>
+                <div class="mb-5">
+                    <h1><span>Результаты поиска</span> «виджеты»</h1>
+                </div>
+                <div style="max-width: 900px;">
+                    <!-- Выводим 10 результатов -->
+                    <ol class="search-results">
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Заголовок результата поиска</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Виджет текст поиска</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Страница поста</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Рандомный анкор</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Не самый длинный заголовок результата поиска</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Заголовок результата поиска</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Виджет текст поиска</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Страница поста</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Рандомный анкор</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-results-item">
+                            <div class="position-relative">
+                                <p class="h3">
+                                    <a class="search-results-link stretched-link" href="#">Определенно это самый длинный заголовок результата поиска, длиннее ничего нет</a>
+                                </p>
+                                <div class="search-results-short">
+                                    <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных...</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
-            <!-- Возможность добавлять свою картинку -->
-            <!-- <img class="img-overlay-bottom z-index-1" src="img/angles.svg" alt=""> -->
-            <!-- Закомментил картинку просто для того чтобы в вёрстке не отображать -->
         </section>
 
     </main>
